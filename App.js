@@ -19,6 +19,9 @@ import environment from "./environment";
 
 console.disableYellowBox = true;
 
+const url =
+  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
+
 firebase.initializeApp(firebaseConfig);
 
 export default class App extends React.Component {
@@ -120,7 +123,7 @@ export default class App extends React.Component {
 
       var bestGuess = "";
       for (response of responseJson.responses) {
-        bestGuess += response.fullTextAnnotation.text += " , ";
+        bestGuess += response.fullTextAnnotation.text += "  ";
       }
 
       this.setState({
