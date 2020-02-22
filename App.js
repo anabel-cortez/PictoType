@@ -14,8 +14,8 @@ import { Button } from "react-native-elements";
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
 import uuid from "uuid";
-import firebaseConfig from "./firebaseConfig";
-import environment from "./environment";
+import firebase from "../utils/firebase";
+import environment from "../config/environment";
 
 console.disableYellowBox = true;
 
