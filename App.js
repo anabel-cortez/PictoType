@@ -19,10 +19,10 @@ import environment from "../config/environment";
 
 console.disableYellowBox = true;
 
-const url =
-  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
+//const url =
+//  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
 
-firebase.initializeApp(firebaseConfig);
+//firebase.initializeApp(firebaseConfig);
 
 export default class App extends React.Component {
   state = {
