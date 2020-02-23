@@ -1,7 +1,7 @@
 export default firebaseConfig = {
-  apiKey: "AIzaSyDsrkFA6lPC_qHS23VpAjXcrqB6Jp4dV3o",
-  authDomain: "pictoType.firebaseapp.com",
-  databaseURL: "https://pictoType.firebaseio.com",
-  storageBucket: "gs://pictoType.appspot.com",
-  projectId: "pictoType"
+  apiKey: "AIzaSyAGJv7NQZAxcxrxxOx9D4W0yXlLc_v5njw",
+  authDomain: "pictotype.firebaseapp.com",
+  databaseURL: "https://pictotype.firebaseio.com",
+  storageBucket: "gs://pictotype.appspot.com",
+  projectId: "pictotype"
 };

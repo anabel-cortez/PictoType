@@ -14,15 +14,14 @@ import { Button } from "react-native-elements";
 import * as ImagePicker from "expo-image-picker";
 import * as Permissions from "expo-permissions";
 import uuid from "uuid";
-import firebase from "utils/firebase";
-import environment from "config/environment";
+import firebase from "firebase";
+import environment from "./utils/environment";
+import firebaseConfig from "./utils/firebase";
 
 console.disableYellowBox = true;
 
 //const url =
 //  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
-
-//firebase.initializeApp(firebaseConfig);
 
 export default class App extends React.Component {
   state = {
@@ -34,6 +33,8 @@ export default class App extends React.Component {
   async componentDidMount() {
     await Permissions.askAsync(Permissions.CAMERA_ROLL);
     await Permissions.askAsync(Permissions.CAMERA);
+
+    firebase.initializeApp(firebaseConfig);
   }
 
   render() {
