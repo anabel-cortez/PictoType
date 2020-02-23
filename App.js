@@ -24,7 +24,7 @@ import LogoFile from './components/LogoFile'; //import logo file for logo
 
 console.disableYellowBox = true;
 
-export function Logo() {
+/*export function Logo() {
   return (
     <View style={styles.container}>
       <Image source={logo} style={{ width: 305, height: 159 }} /> 
@@ -34,7 +34,7 @@ export function Logo() {
       </Text>
     </View>
   );//add
-}
+} */
 
 //const url =
 //  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
@@ -66,7 +66,7 @@ export default class App extends React.Component {
             marginTop: 100
           }}
         >             
-           /* <LogoFile /> */          
+         <LogoFile />          
 
          <Button
             buttonStyle={styles.standardButton}
