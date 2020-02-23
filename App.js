@@ -19,20 +19,11 @@ import environment from "./utils/environment";
 import firebaseConfig from "./utils/firebase";
 import logo from "./assets/logo.png";
 import { Header } from "react-native/Libraries/NewAppScreen";
-
+import Constants from 'expo-constants';
+import AssetExample from './components/logoDisplay';
 console.disableYellowBox = true;
 
-export function Logo() {
-  return (
-    <View style={styles.container}>
-      <Image source={logo} style={{ width: 305, height: 159 }} /> 
 
-      <Text style={{color: '#888', fontSize: 18}}> 
-        To share a photo from your phone with a friend, just press the button below!
-      </Text>
-    </View>
-  );//addd
-}
 
 //const url =
 //  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
@@ -64,6 +55,7 @@ export default class App extends React.Component {
             marginTop: 100
           }}
         > 
+        <AssetExample />
          <Button
             buttonStyle={styles.standardButton}
             titleStyle={styles.standardTextButton}
