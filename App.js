@@ -19,6 +19,8 @@ import environment from "./utils/environment";
 import firebaseConfig from "./utils/firebase";
 import logo from "./assets/logo.png";
 import { Header } from "react-native/Libraries/NewAppScreen";
+import Constants from 'expo-constants';
+import LogoFile from './components/LogoFile'; //import logo file for logo
 
 console.disableYellowBox = true;
 
@@ -28,7 +30,7 @@ export function Logo() {
       <Image source={logo} style={{ width: 305, height: 159 }} /> 
 
       <Text style={{color: '#888', fontSize: 18}}> 
-        To share a photo from your phone with a friend, just press the button below!
+        
       </Text>
     </View>
   );//addd
@@ -63,7 +65,9 @@ export default class App extends React.Component {
             justifyContent: "center",
             marginTop: 100
           }}
-        > 
+        >             
+            <LogoFile />           
+
          <Button
             buttonStyle={styles.standardButton}
             titleStyle={styles.standardTextButton}
