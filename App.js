@@ -24,7 +24,7 @@ import LogoFile from './components/LogoFile'; //import logo file for logo
 console.disableYellowBox = true;
 
 <<<<<<< HEAD
-/*export function Logo() {
+export function Logo() {
   return (
     <View style={styles.container}>
       <Image source={logo} style={{ width: 305, height: 159 }} /> 
@@ -34,7 +34,7 @@ console.disableYellowBox = true;
       </Text>
     </View>
   );//add
-} */
+} 
 
 =======
 >>>>>>> parent of 4aad757... added logo
@@ -68,7 +68,7 @@ export default class App extends React.Component {
             marginTop: 100
           }}
         >             
-         <LogoFile />          
+         <logoFile />          
 
          <Button
             buttonStyle={styles.standardButton}
