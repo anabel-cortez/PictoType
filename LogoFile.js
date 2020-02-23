@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Text, View, StyleSheet, Image } from 'react-native';
 
-export default class AssetPictoTypecentered extends React.Component {
+export default class AssetLogo extends React.Component {
   render() {
     return (
       <View style={styles.container}>

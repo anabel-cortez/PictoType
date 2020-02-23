@@ -30,10 +30,10 @@ export function Logo() {
       <Image source={logo} style={{ width: 305, height: 159 }} /> 
 
       <Text style={{color: '#888', fontSize: 18}}> 
-        
+        Test
       </Text>
     </View>
-  );//addd
+  );//add
 }
 
 //const url =
@@ -66,7 +66,7 @@ export default class App extends React.Component {
             marginTop: 100
           }}
         >             
-            <LogoFile />           
+           /* <LogoFile /> */          
 
          <Button
             buttonStyle={styles.standardButton}
