@@ -17,6 +17,7 @@ import uuid from "uuid";
 import firebase from "firebase";
 import environment from "./utils/environment";
 import firebaseConfig from "./utils/firebase";
+import { Header } from "react-native/Libraries/NewAppScreen";
 
 console.disableYellowBox = true;
 
@@ -47,16 +48,24 @@ export default class App extends React.Component {
             flex: 1,
             alignItems: "center",
             justifyContent: "center",
-            marginTop: 50
+            marginTop: 100
           }}
-        >
+        > 
+         <Button
+            buttonStyle={styles.standardButton}
+            titleStyle={styles.standardTextButton}
+            onPress={this._pickImage}
+            title="Welcome to PictoType!"
+            type="clear"
+          />
+
           <Button
             buttonStyle={styles.loginButton}
             titleStyle={styles.loginTextButton}
             onPress={this._pickImage}
-            title="Pick an image from camera roll"
+            title="Select photo"
           />
-
+        
           <Button
             onPress={this._takePhoto}
             title="Take a photo"
@@ -272,11 +281,18 @@ async function uploadImageAsync(uri) {
 }
 
 const styles = StyleSheet.create({
+  standardTextButton: {
+    fontSize: 27,
+    color: "black",
+    fontWeight: "bold", //added
+    //fontSize: 30,
+  },
   loginTextButton: {
     fontSize: 16,
     color: "white",
     fontWeight: "bold"
   },
+
   loginButton: {
     marginTop: 10,
     marginBottom: 10,
