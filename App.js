@@ -17,13 +17,13 @@ import uuid from "uuid";
 import firebase from "firebase";
 import environment from "./utils/environment";
 import firebaseConfig from "./utils/firebase";
-import logo from "./assets/logo.png";
 import { Header } from "react-native/Libraries/NewAppScreen";
 import Constants from 'expo-constants';
 import LogoFile from './components/LogoFile'; //import logo file for logo
 
 console.disableYellowBox = true;
 
+<<<<<<< HEAD
 /*export function Logo() {
   return (
     <View style={styles.container}>
@@ -36,6 +36,8 @@ console.disableYellowBox = true;
   );//add
 } */
 
+=======
+>>>>>>> parent of 4aad757... added logo
 //const url =
 //  "'https://firebasestorage.googleapis.com/v0/b/blobtest-36ff6.appspot.com/o/Obsidian.jar?alt=media&token=93154b97-8bd9-46e3-a51f-67be47a4628a"; //added
 
@@ -71,6 +73,7 @@ export default class App extends React.Component {
          <Button
             buttonStyle={styles.standardButton}
             titleStyle={styles.standardTextButton}
+            onPress={this._pickImage}
             title="Welcome to PictoType!"
             type="clear"
           />
@@ -301,18 +304,17 @@ const styles = StyleSheet.create({
     fontSize: 27,
     color: "black",
     fontWeight: "bold", //added
+    //fontSize: 30,
   },
   loginTextButton: {
     fontSize: 16,
     color: "white",
     fontWeight: "bold"
-    //marginTop: 10, // chnages button text to be lower
-  
   },
 
   loginButton: {
     marginTop: 10,
-    marginBottom: 30,
+    marginBottom: 10,
     backgroundColor: "rgba(232, 147, 142, 1)",
     borderRadius: 10,
     height: 50,
